@@ -442,3 +442,68 @@ body {
 		font-size: 70%;
 	}
 } 
+
+@media print {
+	:root {
+	  --pgbar-length: 100%;
+	}
+  
+	html {
+	  font-size: 80%; /* Ajuste o tamanho da fonte conforme necessário */
+	}
+  
+	body {
+	  padding: 0; /* Remova o espaçamento adicional no corpo */
+	}
+  
+	.wrapper {
+	  max-width: 100%; /* Ajuste a largura máxima conforme necessário */
+	  box-shadow: none; /* Remova a sombra */
+	  background-color: transparent; /* Remova a cor de fundo */
+	}
+  
+	.intro {
+	  display: none; /* Remova a seção de introdução */
+	}
+  
+	.detail {
+	  flex: 1; /* Ocupa todo o espaço disponível */
+	  padding: 1rem; /* Reduza o espaçamento interno */
+	}
+  
+	.profile::after {
+	  display: none; /* Remova o elemento ::after da seção de perfil */
+	}
+  
+	.photo img {
+	  width: 100px; /* Reduza o tamanho da imagem do perfil */
+	}
+  
+	.intro-section,
+	.topic,
+	.timeline-block,
+	.pg-list > li,
+	.tool-list > li,
+	.favor-list > li {
+	  margin-bottom: 10px; /* Adapte o espaçamento inferior conforme necessário */
+	}
+  
+	.intro-section .title,
+	.topic h1,
+	.about h1,
+	.contact h1,
+	.detail-title,
+	.detail-section h1 {
+	  font-size: 16px; /* Ajuste o tamanho da fonte dos títulos conforme necessário */
+	}
+  
+	.about p,
+	.topic p,
+	.timeline-block p,
+	.pg-list > li,
+	.tool-list > li,
+	.favor-list > li {
+	  font-size: 14px; /* Ajuste o tamanho da fonte dos parágrafos conforme necessário */
+	}
+  }
+  
